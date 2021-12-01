@@ -1,7 +1,39 @@
-.default {
-
+.button {
+    width: 100px;
+    margin: 3px;
+    text-decoration: none;
+    color: #000;
+    border: #000 solid 2px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
-.red {
-    background: red;
+
+.button:active {
+    color: red;
+    background-color: #333;
+    border-color: #333;
+    transform: scale(0.9);
+}
+
+
+.redButton {
+    width: 100px;
+    height: 44px;
+    border-radius: 0;
+    background-color: red;
+}
+.button:hover:enabled {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
 }

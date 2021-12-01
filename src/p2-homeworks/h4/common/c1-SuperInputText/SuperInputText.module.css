@@ -10,3 +10,8 @@
 .error {
     color: red;
 }
+
+.default {
+    border: 3px ridge lime;
+    background: lightgreen;
+}
