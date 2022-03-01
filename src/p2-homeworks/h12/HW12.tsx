@@ -12,8 +12,7 @@ function HW12() {
     const dispatch = useDispatch()
 
     // useDispatch, onChangeCallback
-    const onChangeCallback = (themeValue:string) => {
-        // console.log(themeValue)
+    const changeTheme = (themeValue:string) => {
         dispatch(changeThemeAC(themeValue))
     }
 
@@ -26,7 +25,7 @@ function HW12() {
 
             {/*should work (должно работать)*/}
             {/*SuperSelect or SuperRadio*/}
-            <SuperSelect options={themes} onChangeOption = {onChangeCallback}/>
+            <SuperSelect options={themes} onChangeOption = {changeTheme}/>
 
             <hr/>
         </div>
