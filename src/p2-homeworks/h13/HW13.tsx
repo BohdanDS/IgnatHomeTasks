@@ -13,7 +13,6 @@ const Hw13 = () => {
     const handleButton = () => {
         NekoCafeAPI.setCheckbox(checked)
             .then((response) =>setResponse(response.data.errorText))
-            // .catch((error)=>setResponse(error.errorText))
             .catch(error => {
                 setResponse(error.response ? error.response.data.errorText : error.message);
             })
